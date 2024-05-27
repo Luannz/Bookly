@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: inter;
+}
+
+header {
+    background-color: #fffbf3;
+    width: calc(100% - 70px);
+    height: 120px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 0px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background: url(Images/bookly-logo.png) center/cover;
+}
+
+.bar {
+    background-color: #E4DCCF;
+    width: 682px;
+    height: 48px;
+    margin: 35px 0px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 130px;
+    border: none;
+    border-right: 1px solid rgb(168, 168, 168);
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    font-family: inter;
+    font-weight: bold;
+    color: #6E9E9D;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#img-cardapio {
+    background: url(Images/cardapio.png) center/cover;
+    width: 15px;
+    height: 15px;
+}
+
+#img-divisa {
+    background: url(Images/seta-baixo.png) center/cover;
+    width: 10px;
+    height: 5px;
+}
+
+#search {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    width: calc(100% - 240px);
+    padding: 0px 20px;
+    font-size: 1em;
+}
+
+#search::placeholder {
+    font-weight: bold;
+}
+
+#button-search {
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-left: 1px solid rgb(168, 168, 168);
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-search:hover {
+    cursor: pointer;
+}
+
+#img-search {
+    height: 20px;
+    width: 20px;
+    background: url(Images/pesquisar.png) center/cover;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.button-container button {
+    background-color: #E4DCCF;
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button:hover {
+    cursor: pointer;
+}
+
+.button-container button div {
+    width: 20px;
+    height: 20px;
+}
+
+#img-favoritos {
+    background: url(Images/favorito.png) center/cover;
+}
+
+#img-carrinho {
+    background: url(Images/carrinho.png) center/cover;
+}
+
+#img-conta {
+    background: url(Images/conta.png) center/cover;
+}
+
+#btn-ajuda {
+    background-color: #7D9D9C;
+    width: 250px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    font-family: inter;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+#btn-ajuda:hover {
+    cursor: pointer;
+    background-color: #718f8e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#img-ajuda {
+    background: url(Images/ajuda.png) center/cover;
+    width: 15px;
+    height: 15px;
+}
+
+nav {
+    width: calc(100% - 45px);
+    height: 40px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: #726F6A9E;
+    text-decoration: none;
+}
+
+body > h2 {
+    font-size: 2em;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+main {
+    background-color: blue;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.right-section {
+    width: 330px;
+    background-color: green;
+}

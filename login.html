@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookly</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Images/bookly-logo.png">
     <script src="senha.js" defer></script>
 </head>
 <body>
@@ -39,5 +40,14 @@
             </section>
         </main>
     </div>
+    <script>
+        var btnLogin = document.getElementById('login-button')
+
+        function mudarTela() {
+            window.location.href = 'home.html'
+        }
+
+        btnLogin.addEventListener('click', mudarTela)
+    </script>
 </body>
 </html>
