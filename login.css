@@ -10,8 +10,6 @@ body {
     background-color: #fffbf3;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #box {
@@ -20,6 +18,7 @@ body {
     width: 1200px;
     height: 700px;
     border-radius: 15px;
+    margin: 50px 0px;
 }
 
 main {
@@ -146,4 +145,50 @@ a {
 
 a:hover {
     color: #6c8b8a;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #FFF8ED;
+    }
+
+    #box {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    main {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    #image-section {
+        display: none;
+    }
+
+    #login-section {
+        width: 100%;
+    }
+
+    #visualizar {
+        top: -40px;
+    }
+
+    #login-button {
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+     #login-section {
+        padding: 0px;
+     }
+
+     #login-box {
+        width: calc(100% - 60px);
+     }
 }

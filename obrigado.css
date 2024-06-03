@@ -10,8 +10,6 @@ body {
     background-color: #fffbf3;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #box {
@@ -20,6 +18,7 @@ body {
     width: 1200px;
     height: 700px;
     border-radius: 15px;
+    margin: 50px 0px;
 }
 
 main {
@@ -73,4 +72,22 @@ p {
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
     border-radius: 7.5px;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #FFF8ED;
+    }
+
+    #box {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    main {
+        border-radius: 0px;
+        box-shadow: none;
+    }
 }

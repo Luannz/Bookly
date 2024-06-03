@@ -11,10 +11,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #box {
+    margin: 50px 0px;
     background-color: #FFF8ED;
     box-shadow: 17.5px 17.5px #7D9D9C;
     width: 1200px;
@@ -124,7 +124,6 @@ label {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    width: 100%;
     width: fit-content;
     margin-top: -35px;
 }
@@ -160,4 +159,80 @@ a:hover {
 #login .inp:focus {
     border: 1px solid #d6bf9a;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: #FFF8ED;
+    }
+
+    #box {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    main {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    #image-section {
+        display: none;
+    }
+
+    #login-section {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #login-section > p {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #login{
+        width: calc(100% - 30px);
+        align-items: center;
+    }
+
+    .label-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    #login label {
+        width: 100%;
+    }
+
+    #login input {
+        width: calc(100% - 20px);
+    }
+
+    #visualizar {
+        position: relative;
+        top: -41px;
+        left: 92%;
+    }
+
+    #label-confirmar {
+        margin-top: -35px;
+    }
+
+    #label-termos {
+        margin: 0px;
+    }
+
+    #label-termos input {
+        width: 15px;
+    }
 }
