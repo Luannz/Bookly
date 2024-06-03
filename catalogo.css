@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     font-family: inter;
 }
 
@@ -198,13 +198,13 @@ nav a {
 
 body > h2 {
     font-size: 2em;
-    margin-left: 45px;
     margin-top: 10px;
+    width: calc(100% - 45px);
+    padding-left: 45px;
 }
 
 main {
     margin-top: 15px;
-    width: 100%;
     display: flex;
 }
 
@@ -245,7 +245,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 35px;
 }
 
 .right-section-top {
@@ -305,7 +304,7 @@ main .bar {
 }
 
 .right-section-bottom {
-    width: 1013px;
+    width: 1050px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
