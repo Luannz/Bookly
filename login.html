@@ -31,25 +31,31 @@
                     </label>
                 </div>
 
-                <button id="login-button">Login</button>
-
                 <p style="margin-top: 15px;">Não possui uma conta? <a href="cadastro.html">Criar</a></p>
+
+                <div id="mobile-login-button">
+                    <button id="login-button-1">Login</button>
+                    <p style="margin-top: 15px;">Não possui uma conta? <a href="cadastro.html">Criar</a></p>
+                </div>
+
             </section>
             <section id="image-section">
                 <div class="logo-box"></div>
                 <h2>bookly</h2>
-                <button id="login-button">Login</button>
+                <button id="login-button-2">Login</button>
             </section>
         </main>
     </div>
     <script>
-        var btnLogin = document.getElementById('login-button')
+        var btnLogin1 = document.getElementById('login-button-1')
+        var btnLogin2 = document.getElementById('login-button-2')
 
         function mudarTela() {
             window.location.href = 'home.html'
         }
 
-        btnLogin.addEventListener('click', mudarTela)
+        btnLogin1.addEventListener('click', mudarTela)
+        btnLogin2.addEventListener('click', mudarTela)
     </script>
 </body>
 </html>

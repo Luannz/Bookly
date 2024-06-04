@@ -182,10 +182,12 @@ header {
     height: 15px;
 }
 
+.menu-nav {
+    width: 1350px;
+}
+
 nav {
-    width: calc(100% - 45px);
     height: 40px;
-    padding-left: 45px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -199,8 +201,6 @@ nav a {
 body > h2 {
     font-size: 2em;
     margin-top: 10px;
-    width: calc(100% - 45px);
-    padding-left: 45px;
 }
 
 main {
