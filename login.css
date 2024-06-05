@@ -191,6 +191,10 @@ a:hover {
     #mobile-login-button {
         display: flex;
      }
+
+     #conta-1 {
+        display: none;
+     }
 }
 
 @media screen and (max-width: 540px) {
