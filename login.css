@@ -19,6 +19,7 @@ body {
     height: 700px;
     border-radius: 15px;
     margin: 50px 0px;
+    
 }
 
 main {
@@ -37,18 +38,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 
 #login-section {
+    background-color: #FFF8ED;
     width: 60%;
-    height: 100%;
-    border-radius: 0px 15px 15px 0px;
+    height: 95.7%;
+    border-radius: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     font-family: inter;
+
+    z-index: 10;
 }
 
 .logo-box {
@@ -59,6 +64,8 @@ main {
     margin-bottom: 25px;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
     background: #fffbf3 url(Images/bookly-logo.png) center/cover;
+
+    position: relative;
 }
 
 h2 {
@@ -79,6 +86,8 @@ h2 {
     font-weight: 500;
     box-shadow: 0px 2.5px 5px;
     margin-top: 190px;
+
+    z-index: 10;
 }
 
 #login-button-1:hover, #login-button-2 {
@@ -177,6 +186,7 @@ a:hover {
 
     #login-section {
         width: 100%;
+        z-index: 10;
     }
 
     #visualizar {
@@ -205,4 +215,271 @@ a:hover {
      #login-box {
         width: calc(100% - 60px);
      }
+}
+/* ---------------Animações-------------- */
+
+#box_de_cima {
+    display: inline-block;
+    width: 170px;
+    height: 15px;
+    background: #576e6d00;
+    border: 2px solid #576e6d;
+    border-left: transparent;
+
+    animation: box_de_cima 2s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 75px;
+    right: 370px;
+}
+
+#circulo_oco {
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    background: #576e6d00;
+    border: 2px solid #576e6d;
+    border-top: transparent;
+    border-right: transparent;
+    border-radius: 0% 16px 0% 100%;
+
+    animation: circulo_oco 2s linear 0s 1 normal;
+
+    position: absolute;
+    top: 50px;
+    right: 74px;
+}
+
+#gota_de_cima {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #576E6D;
+    border-radius: 50%;
+
+    animation: gota_de_cima 5s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 170px;
+    right: 175px;
+}
+
+@keyframes gota_de_cima {
+    0% {
+        top: 170px;
+        right: 175px;
+        background: #7D9D9C;
+    }
+
+    1% {
+        width: 10px;
+        height: 10px;
+
+        top: 125px;
+        right: 208px;
+    }
+
+    13% {
+        background: #6a8685;
+    }
+
+    14% {
+        right: 194px;
+        background: #576E6D;
+    }
+
+    25% {
+        top: 128px;
+    }
+
+    50% {
+        top: 150px;
+        right: 136px;
+    }
+
+    75% {
+        top: 165px;
+    }
+
+    100% {
+        top: 170px;
+        right: 175px;
+        background: #576E6D
+    }
+}
+
+#gota_do_meio {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #576E6D;
+    border-radius: 50%;
+
+    animation: gota_do_meio 9s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 314px;
+    right: 400px;
+}
+
+@keyframes gota_do_meio {
+
+    1% {
+        width: 45px;
+        height: 45px;
+
+        top: 255px;
+        right: 326px;
+
+        background: #7D9D9C;
+    }
+
+    10% {
+        background: #7D9D9C;
+    }
+
+    26% {
+        background: #576E6D
+    }
+
+    50% {
+        top: 338px;
+        right: 374px;
+    }
+
+
+}
+
+#pontilhado {
+    display: inline;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px dashed #576E6D ;
+
+    animation: pontilhado 10s linear 0s 1 normal  ;
+
+    position: absolute;
+    z-index: 1;
+    top: 443px;
+    right: 325px;
+
+}
+
+@keyframes pontilhado{
+
+    0% {
+        rotate: 80deg;
+    }
+
+}
+
+#circulo_esquerdo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #576E6D;
+    border-radius: 50%;
+
+    animation: circulo_esquerdo 4s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 496px;
+    right: 378px;
+}
+
+@keyframes circulo_esquerdo {
+
+    1% {
+        top: 496px;
+        right: 562px;
+        background: #7D9D9C;
+    }
+
+    50% {
+        background: #7D9D9C;
+    }
+
+}
+
+#gota_de_baixo {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #576E6D;
+    border-radius: 50%;
+
+    animation: gota_de_baixo 7s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 663px;
+    right: 370px;
+}
+
+@keyframes gota_de_baixo {
+
+    1% {
+        background: #576e6d00;
+        right: 435px;
+    }
+
+    49%{
+        background: #576e6d00;
+        right: 435px;
+    }
+
+    59% {
+        background-color: #576e6d;
+    }
+
+}
+
+#circulo_direito {
+    display: inline-block;
+    width: 140px;
+    height: 170px;
+    background: #576E6D;
+    border-radius: 50% 0% 0% 50%;
+
+    animation: circulo_direito 2s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 420px;
+    right: 74px;
+}
+
+@keyframes circulo_direito {
+
+    1% {
+        top: 496px;
+        right: 70px;
+        background: #7d9d9c00;
+    }
+
+    50% {
+        background: #7D9D9C;
+    }
+
+}
+
+#box_de_baixo {
+    display: inline-block;
+    width: 170px;
+    height: 20px;
+    background: #576e6d00;
+    border: 2px solid #576e6d;
+    border-right: transparent;
+
+    animation: box_de_baixo 2s linear 0s 1 normal  ;
+
+    position: absolute;
+
+    top: 690px;
+    right: 74px;
 }
