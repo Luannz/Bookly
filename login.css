@@ -35,9 +35,7 @@ main {
     height: 100%;
     background-color: #7D9D9C;
     border-radius: 0px 15px 15px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
 
 }
 
@@ -66,11 +64,19 @@ main {
     background: #fffbf3 url(Images/bookly-logo.png) center/cover;
 
     position: relative;
+    top: -100%;
+    right: -30%;
 }
 
 h2 {
     font-family: inter;
     font-size: 2em;
+}
+
+h2#bookly {
+    position: relative;
+    top: -100%;
+    right: -40%;
 }
 
 
@@ -87,6 +93,9 @@ h2 {
     box-shadow: 0px 2.5px 5px;
     margin-top: 190px;
 
+    position: relative;
+    top: -100%;
+    right: -25%;
     z-index: 10;
 }
 
@@ -205,6 +214,7 @@ a:hover {
      #conta-1 {
         display: none;
      }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -216,9 +226,16 @@ a:hover {
         width: calc(100% - 60px);
      }
 }
+
 /* ---------------Animações-------------- */
 
-#box_de_cima {
+@media screen and (min-width: 1200px) {
+
+    #animação_logi {
+        height: 100%;
+    }
+
+    #box_de_cima {
     display: inline-block;
     width: 170px;
     height: 15px;
@@ -228,10 +245,9 @@ a:hover {
 
     animation: box_de_cima 2s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 75px;
-    right: 370px;
+    position: relative;
+    top: -5%;
+    right: 0%;
 }
 
 #circulo_oco {
@@ -246,9 +262,9 @@ a:hover {
 
     animation: circulo_oco 2s linear 0s 1 normal;
 
-    position: absolute;
-    top: 50px;
-    right: 74px;
+    position: relative;
+    top: 0%;
+    right: -44.3%;
 }
 
 #gota_de_cima {
@@ -260,25 +276,19 @@ a:hover {
 
     animation: gota_de_cima 5s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 170px;
-    right: 175px;
+    position: relative;
+    top: 7%;
+    right: -20%;
 }
 
 @keyframes gota_de_cima {
-    0% {
-        top: 170px;
-        right: 175px;
-        background: #7D9D9C;
-    }
 
     1% {
         width: 10px;
         height: 10px;
 
-        top: 125px;
-        right: 208px;
+        top: 2%;
+        right: -12%;
     }
 
     13% {
@@ -286,26 +296,27 @@ a:hover {
     }
 
     14% {
-        right: 194px;
+        right: -23%;
         background: #576E6D;
     }
 
     25% {
-        top: 128px;
+        top: 3%;
+        right: -28%;
     }
 
     50% {
-        top: 150px;
-        right: 136px;
+        top: 6%;
+        right: -27%;
     }
 
     75% {
-        top: 165px;
+        top: 9%;
     }
 
     100% {
-        top: 170px;
-        right: 175px;
+        top: 7%;
+        right: -20%;
         background: #576E6D
     }
 }
@@ -317,12 +328,11 @@ a:hover {
     background: #576E6D;
     border-radius: 50%;
 
-    animation: gota_do_meio 9s linear 0s 1 normal  ;
+    animation: gota_do_meio 7s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 314px;
-    right: 400px;
+    position: relative;
+    top: 28%;
+    right: 34%;
 }
 
 @keyframes gota_do_meio {
@@ -331,8 +341,8 @@ a:hover {
         width: 45px;
         height: 45px;
 
-        top: 255px;
-        right: 326px;
+        top: 24%;
+        right: 21%;
 
         background: #7D9D9C;
     }
@@ -346,15 +356,15 @@ a:hover {
     }
 
     50% {
-        top: 338px;
-        right: 374px;
+        top: 30%;
+        right: 28%;
     }
 
 
 }
 
 #pontilhado {
-    display: inline;
+    display: inline-block;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -362,10 +372,10 @@ a:hover {
 
     animation: pontilhado 10s linear 0s 1 normal  ;
 
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 443px;
-    right: 325px;
+    top: 43%;
+    right: 19%;
 
 }
 
@@ -386,17 +396,16 @@ a:hover {
 
     animation: circulo_esquerdo 4s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 496px;
-    right: 378px;
+    position: relative;
+    top: 6%;
+    right: 7%;
 }
 
 @keyframes circulo_esquerdo {
 
     1% {
-        top: 496px;
-        right: 562px;
+        top: 6%;
+        right: 44%;
         background: #7D9D9C;
     }
 
@@ -413,24 +422,23 @@ a:hover {
     background: #576E6D;
     border-radius: 50%;
 
-    animation: gota_de_baixo 7s linear 0s 1 normal  ;
+    animation: gota_de_baixo 9s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 663px;
-    right: 370px;
+    position: relative;
+    top: 0%;
+    right: 8%;
 }
 
 @keyframes gota_de_baixo {
 
     1% {
         background: #576e6d00;
-        right: 435px;
+        right: 21%;
     }
 
     49%{
         background: #576e6d00;
-        right: 435px;
+        right: 21%;
     }
 
     59% {
@@ -448,17 +456,16 @@ a:hover {
 
     animation: circulo_direito 2s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 420px;
-    right: 74px;
+    position: relative;
+    top: -8%;
+    right: -22.5%;
 }
 
 @keyframes circulo_direito {
 
     1% {
-        top: 496px;
-        right: 70px;
+        top: 7%;
+        right: -22.5%;
         background: #7d9d9c00;
     }
 
@@ -478,8 +485,8 @@ a:hover {
 
     animation: box_de_baixo 2s linear 0s 1 normal  ;
 
-    position: absolute;
-
-    top: 690px;
-    right: 74px;
+    position: relative;
+    top: 7%;
+    right: -62.5%;
+}
 }
