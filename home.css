@@ -174,6 +174,138 @@ a:hover {
     box-shadow: 20px 15px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-evenly;
+
+    position: relative;
+    transition: 1s;
+    animation: p1 20s linear 0s infinite normal;
+}
+
+@keyframes p1 {
+
+    0% {
+        display: flex;
+        width: 568px;
+        opacity: 100%;
+    }
+
+    16.5% {
+        width: 568px;
+        opacity: 100%;
+    }
+
+    33% {
+        width: 568px;
+        opacity: 0%;
+        display: none;
+    }
+
+
+    100% {
+        display: none;
+        opacity: 0%;
+    }
+}
+
+.destaque2{
+    width: 568px;
+    height: 420px;
+    margin-top: 70px;
+    margin-left: 35px;
+    background-color: #F0EBE3;
+    border-radius: 10px;
+    box-shadow: 20px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+    transition: 1s;
+    animation: p2 20s linear 0s infinite normal;
+    top: 0%;
+    right: 0%;
+}
+
+@keyframes p2 {
+    0% {
+        display: none;
+    }
+
+    33% {
+        display: none;
+        width: 568px;
+    }
+
+    34% {
+        display: flex;
+        width: 568px;
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    66%{
+        opacity: 0%;
+        display: none;
+    }
+
+    100%{
+        display: none;
+    }
+
+}
+
+.destaque3 {
+    width: 568px;
+    height: 420px;
+    margin-top: 70px;
+    margin-left: 35px;
+    background-color: #F0EBE3;
+    border-radius: 10px;
+    box-shadow: 20px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+    transition: 1s;
+    animation: p3 20s linear 0s infinite normal;
+    top: 0%;
+    right: 0%;
+}
+
+@keyframes p3 {
+
+    0% {
+        display: none;
+    }
+
+    66% {
+
+        display: none;
+        width: 568px;
+
+    }
+
+    67% {
+        display: flex;
+        width: 568px;
+        opacity: 100%;
+    }
+
+    83% {
+        opacity: 100%;
+    }
+
+    99% {
+        width: 568px;
+        opacity: 0%;
+        display: none;
+    }
+
+    100% {
+        display: none;
+    }
+
 }
 
 .img-destaque {
